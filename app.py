@@ -45,8 +45,8 @@ elif input_method == "Draw Expression":
         stroke_width=stroke_width,
         stroke_color=stroke_color,
         background_color="white",
-        width=280,
-        height=280,
+        width=560,
+        height=560,
         drawing_mode="freedraw",
         key=canvas_key,
     )
