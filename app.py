@@ -59,7 +59,7 @@ elif input_method == "Draw Expression":
 
 # ---------------- Display & Submit ----------------
 if image:
-    st.image(image, caption="Input Expression", use_container_width=True)
+    
 
     if st.button("Submit Expression"):
         symbols = preprocess_and_segment(image)
