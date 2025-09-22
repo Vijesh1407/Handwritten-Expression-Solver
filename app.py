@@ -31,7 +31,7 @@ elif input_method == "Draw Expression":
     # Tool selection and stroke width (defaults depend on tool)
     tool = st.radio("Tool:", ["Brush", "Eraser"], index=0, horizontal=True)
     default_width = 8 if tool == "Brush" else 30
-    stroke_width = st.slider("Stroke width", min_value=1, max_value=60, value=default_width)
+    stroke_width = st.slider("Stroke width", min_value=1, max_value=15, value=default_width)
 
     # Clear button - increments counter to change canvas key (resets it)
     if st.button("Clear Canvas"):
