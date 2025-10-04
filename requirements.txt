@@ -1,0 +1,7 @@
+tensorflow
+numpy
+opencv-python
+Pillow
+streamlit
+streamlit-drawable-canvas
+kagglehub
