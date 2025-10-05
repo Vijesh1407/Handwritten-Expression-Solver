@@ -346,7 +346,7 @@ if st.session_state.symbols_data:
     expr, result = parse_and_evaluate(final_labels)
     
     if isinstance(result, (int, float)):
-        st.markdown(f'<div class="result-box">✅ <strong>{result}</strong></div>', unsafe_allow_html=True)
+        st.markdown(f'<div class="result-box"><strong>{result}</strong></div>', unsafe_allow_html=True)
         st.balloons()
     elif isinstance(result, str) and "✓" in result:
         st.markdown(f'<div class="result-box">{result}</div>', unsafe_allow_html=True)
@@ -390,6 +390,7 @@ st.markdown("""
         <p>✨ <strong>New:</strong> Manually correct any misclassified symbols using the dropdowns!</p>
     </div>
 """, unsafe_allow_html=True)
+
 
 
 
