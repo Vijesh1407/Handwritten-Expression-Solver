@@ -27,7 +27,7 @@ st.markdown("""
         margin-bottom: 20px;
     }
     .expression-box {
-        background-color: #f0f2f6;
+        background-color: #292222;
         padding: 20px;
         border-radius: 10px;
         margin: 10px 0;
@@ -35,7 +35,7 @@ st.markdown("""
         text-align: center;
     }
     .result-box {
-        background-color: #d4edda;
+        background-color: #292222;
         padding: 15px;
         border-radius: 8px;
         margin: 10px 0;
@@ -348,3 +348,4 @@ st.markdown("""
         <p>⚠️ <strong>Equals Sign:</strong> Draw TWO separate horizontal lines, not one thick line</p>
     </div>
 """, unsafe_allow_html=True)
+
