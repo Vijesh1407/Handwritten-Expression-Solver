@@ -317,10 +317,6 @@ if st.session_state.symbols_data:
         else:
             final_labels.append(sym_data['top_prediction'])
     
-    # Show number of corrections made
-    if st.session_state.manual_corrections:
-        st.info(f"✏️ You made {len(st.session_state.manual_corrections)} manual correction(s)")
-    
     # Format and display expression
     formatted_expr = format_expression(final_labels)
     st.markdown(f'<div class="expression-box">📝 Expression: <strong>{formatted_expr}</strong></div>', unsafe_allow_html=True)
@@ -394,4 +390,5 @@ st.markdown("""
         <p>✨ <strong>New:</strong> Manually correct any misclassified symbols using the dropdowns!</p>
     </div>
 """, unsafe_allow_html=True)
+
 
