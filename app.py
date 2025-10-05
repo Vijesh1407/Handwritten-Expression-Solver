@@ -326,14 +326,6 @@ if st.session_state.symbols_data:
     avg_confidence = np.mean(confidence_scores)
     min_confidence = np.min(confidence_scores)
     
-    # Show confidence metrics
-    col1, col2, col3 = st.columns(3)
-    with col1:
-        st.metric("Average Confidence", f"{avg_confidence:.1%}")
-    with col2:
-        st.metric("Lowest Confidence", f"{min_confidence:.1%}")
-    with col3:
-        st.metric("Corrections Made", len(st.session_state.manual_corrections))
     
     # Warning for low confidence
     if min_confidence < 0.5 and not st.session_state.manual_corrections:
@@ -390,6 +382,7 @@ st.markdown("""
         <p>✨ <strong>New:</strong> Manually correct any misclassified symbols using the dropdowns!</p>
     </div>
 """, unsafe_allow_html=True)
+
 
 
 
