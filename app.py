@@ -27,7 +27,7 @@ st.markdown("""
         margin-bottom: 20px;
     }
     .expression-box {
-        background-color: #f0f2f6;
+        background-color: #211C1C;
         padding: 20px;
         border-radius: 10px;
         margin: 10px 0;
@@ -35,7 +35,7 @@ st.markdown("""
         text-align: center;
     }
     .result-box {
-        background-color: #d4edda;
+        background-color: #211C1C;
         padding: 15px;
         border-radius: 8px;
         margin: 10px 0;
@@ -394,3 +394,4 @@ st.markdown("""
         <p>✨ <strong>New:</strong> Manually correct any misclassified symbols using the dropdowns!</p>
     </div>
 """, unsafe_allow_html=True)
+
