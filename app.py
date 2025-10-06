@@ -111,11 +111,11 @@ with st.expander("ℹ️ Model Information"):
     st.write(f"**Symbols:** {', '.join(sorted(label_map.values()))}")
     
     # Load training history if available
-    if os.path.exists("models/training_history.json"):
-        with open("models/training_history.json") as f:
-            history = json.load(f)
-        if 'best_val_accuracy' in history:
-            st.write(f"**Model Accuracy:** {history['best_val_accuracy']*100:.2f}%")
+    # if os.path.exists("models/training_history.json"):
+    #     with open("models/training_history.json") as f:
+    #         history = json.load(f)
+    #     if 'best_val_accuracy' in history:
+    #         st.write(f"**Model Accuracy:** {history['best_val_accuracy']*100:.2f}%")
 
 # ---------------- Draw Expression ----------------
 st.subheader("🎨 Draw Your Expression")
@@ -382,6 +382,7 @@ st.markdown("""
         <p>✨ <strong>New:</strong> Manually correct any misclassified symbols using the dropdowns!</p>
     </div>
 """, unsafe_allow_html=True)
+
 
 
 
